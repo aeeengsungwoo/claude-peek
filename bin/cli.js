@@ -94,7 +94,7 @@ function install() {
   console.log('claude-peek installed.');
   console.log('  Character : ' + charPath);
   console.log('  Your own  : replace that file with a transparent PNG.');
-  console.log('  Try it    : npx claude-peek test');
+  console.log('  Try it    : npx -y github:aeeengsungwoo/claude-peek test');
 }
 
 function uninstall() {
@@ -120,7 +120,7 @@ function test() {
     return;
   }
   if (!fs.existsSync(peekPath)) {
-    console.error('Not installed yet. Run: npx claude-peek install');
+    console.error('Not installed yet. Run: npx -y github:aeeengsungwoo/claude-peek install');
     process.exit(1);
   }
   const child = spawn(
@@ -136,9 +136,9 @@ function help() {
   console.log('claude-peek — a mascot that peeks down when Claude Code finishes.');
   console.log('');
   console.log('Usage:');
-  console.log('  npx claude-peek install     wire it into the Claude Code Stop hook');
-  console.log('  npx claude-peek test        show the popup once');
-  console.log('  npx claude-peek uninstall   remove the hook and files');
+  console.log('  npx -y github:aeeengsungwoo/claude-peek install     wire it into the Claude Code Stop hook');
+  console.log('  npx -y github:aeeengsungwoo/claude-peek test        show the popup once');
+  console.log('  npx -y github:aeeengsungwoo/claude-peek uninstall   remove the hook and files');
 }
 
 const commands = { install, uninstall, test, help };

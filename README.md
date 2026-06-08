@@ -9,7 +9,7 @@ It hooks into Claude Code's `Stop` event, so the popup fires every time Claude s
 ## Install
 
 ```sh
-npx claude-peek install
+npx -y github:aeeengsungwoo/claude-peek install
 ```
 
 That copies the runtime into `~/.claude/claude-peek/` and adds the `Stop` hook to your `~/.claude/settings.json` (existing hooks are preserved).
@@ -17,7 +17,7 @@ That copies the runtime into `~/.claude/claude-peek/` and adds the `Stop` hook t
 Try it right away:
 
 ```sh
-npx claude-peek test
+npx -y github:aeeengsungwoo/claude-peek test
 ```
 
 ## Use your own character
@@ -33,7 +33,7 @@ Replace that file with **any transparent PNG** and you're done — the popup kee
 ## Uninstall
 
 ```sh
-npx claude-peek uninstall
+npx -y github:aeeengsungwoo/claude-peek uninstall
 ```
 
 Removes the `Stop` hook and the `~/.claude/claude-peek/` folder. Other hooks are left untouched.
@@ -50,7 +50,7 @@ Open `~/.claude/claude-peek/peek.ps1` and edit the values at the top:
 
 ## How it works
 
-- `npx claude-peek install` writes a `Stop` hook like:
+- `npx -y github:aeeengsungwoo/claude-peek install` writes a `Stop` hook like:
   ```json
   { "type": "command", "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"<...>/peek.ps1\"", "async": true }
   ```
