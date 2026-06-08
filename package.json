@@ -2,6 +2,15 @@
   "name": "claude-peek",
   "version": "0.1.0",
   "description": "A little mascot peeks down from the top of your screen when Claude Code finishes a task (Windows).",
+  "author": "aeeengsungwoo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeeengsungwoo/claude-peek.git"
+  },
+  "homepage": "https://github.com/aeeengsungwoo/claude-peek#readme",
+  "bugs": {
+    "url": "https://github.com/aeeengsungwoo/claude-peek/issues"
+  },
   "bin": {
     "claude-peek": "bin/cli.js"
   },
