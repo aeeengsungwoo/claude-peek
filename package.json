@@ -1,0 +1,29 @@
+{
+  "name": "claude-peek",
+  "version": "0.1.0",
+  "description": "A little mascot peeks down from the top of your screen when Claude Code finishes a task (Windows).",
+  "bin": {
+    "claude-peek": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "runtime",
+    "assets"
+  ],
+  "scripts": {
+    "test": "node bin/cli.js test"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "notification",
+    "hook",
+    "windows",
+    "mascot",
+    "wpf"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}
