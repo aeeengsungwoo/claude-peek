@@ -1,7 +1,7 @@
 {
   "name": "claude-peek",
-  "version": "0.1.0",
-  "description": "A little mascot peeks down from the top of your screen when Claude Code finishes a task (Windows).",
+  "version": "0.2.0",
+  "description": "A little mascot peeks down from the top of your screen when Claude Code finishes a task (Windows & macOS).",
   "author": "aeeengsungwoo",
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "notification",
     "hook",
     "windows",
+    "macos",
     "mascot",
     "wpf"
   ],
